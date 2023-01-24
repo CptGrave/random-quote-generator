@@ -31,15 +31,7 @@ function App() {
         <br></br>
         <button className="btn" onClick={fetchNewQuote} id="new-quote">Generate new quote</button>
         <br></br>
-        <a href="twitter.com/intent/tweet" id="tweet-quote"><TwitterShareButton
-  url={quote}
-  quote={quote}
-  hashtag="#dailyQuote"
->
-  <TwitterIcon size={50} round />
-</TwitterShareButton></a>
-        
-        
+        <a href={`https://twitter.com/intent/tweet?text=${quote}`} id="tweet-quote">Tweet this!</a>
     </div>
   );
 }
