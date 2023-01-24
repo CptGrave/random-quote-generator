@@ -1,23 +1,45 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react'
+import { TwitterShareButton, TwitterIcon } from 'react-share';
 import './App.css';
 
+
+
 function App() {
+  const [quote,setQuote] = useState("")
+  const [author,setAuthor] = useState("")
+  useEffect(() => {
+      fetch("http://api.quotable.io/random").then(res => res.json()).then((quote) => {
+      setQuote(quote.content)
+      setAuthor(quote.author)
+              })
+  }
+  ,[])
+
+
+  let fetchNewQuote = () => {
+    fetch("http://api.quotable.io/random").then(res => res.json()).then((quote) => {
+      setQuote(quote.content)
+      setAuthor(quote.author)
+              })
+  }
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="quote" id="quote-box">
+        <h2 id="text">{quote}</h2>
+        <small id="author">{author}</small> </div>
+        <br></br>
+        <button className="btn" onClick={fetchNewQuote} id="new-quote">Generate new quote</button>
+        <br></br>
+        <a href="twitter.com/intent/tweet" id="tweet-quote"><TwitterShareButton
+  url={quote}
+  quote={quote}
+  hashtag="#dailyQuote"
+>
+  <TwitterIcon size={50} round />
+</TwitterShareButton></a>
+        
+        
     </div>
   );
 }

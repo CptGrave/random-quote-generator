@@ -1,38 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap');
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #fe8001;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quote {
+  background: url(./assets/bg.jpg);
+  background-size: cover;
+  width: 550px;
+  height: 550px;
+  border-radius: 60px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quote h2 {
+  font-size: 2em;
   color: white;
+  font-family: 'Lobster', cursive;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.quote small {
+  font-size: 1.5em;
+  color: white;
+  font-family: 'Dancing Script', cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+	display: block;
+	border: 4px solid #fe8001;
+	background: transparent;
+	padding: 10px 15px;
+	color: #ffffff;
+	font-size: 20px;
+	border-radius: 15px;
+	cursor: pointer;
+	outline: none;
+	transition: background 1s, color 1s;
+  font-family: 'Lobster', cursive;
+}
+.btn:hover{
+	background: #fe8001;
+	color: rgb(0, 0, 0);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
