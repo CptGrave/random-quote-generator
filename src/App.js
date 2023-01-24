@@ -27,11 +27,12 @@ function App() {
     <div className="App">
       <div className="quote" id="quote-box">
         <h2 id="text">{quote}</h2>
-        <small id="author">{author}</small> </div>
+        <small id="author">{author}</small>
         <br></br>
         <button className="btn" onClick={fetchNewQuote} id="new-quote">Generate new quote</button>
         <br></br>
         <a href={`https://twitter.com/intent/tweet?text=${quote}`} id="tweet-quote">Tweet this!</a>
+      </div>
     </div>
   );
 }
