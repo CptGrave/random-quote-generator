@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react'
-import { TwitterShareButton, TwitterIcon } from 'react-share';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 
 
