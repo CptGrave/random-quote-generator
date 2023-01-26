@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/github.io/random-quote-generator/static/css/main.cac5e7a2.css",
-    "main.js": "/github.io/random-quote-generator/static/js/main.ce02852e.js",
-    "static/media/bg.jpg": "/github.io/random-quote-generator/static/media/bg.003930057d023f973786.jpg",
-    "index.html": "/github.io/random-quote-generator/index.html",
-    "main.cac5e7a2.css.map": "/github.io/random-quote-generator/static/css/main.cac5e7a2.css.map",
-    "main.ce02852e.js.map": "/github.io/random-quote-generator/static/js/main.ce02852e.js.map"
+    "main.css": "/random-quote-generator/static/css/main.e51ae00e.css",
+    "main.js": "/random-quote-generator/static/js/main.ce02852e.js",
+    "static/media/bg.jpg": "/random-quote-generator/static/media/bg.003930057d023f973786.jpg",
+    "index.html": "/random-quote-generator/index.html",
+    "main.e51ae00e.css.map": "/random-quote-generator/static/css/main.e51ae00e.css.map",
+    "main.ce02852e.js.map": "/random-quote-generator/static/js/main.ce02852e.js.map"
   },
   "entrypoints": [
-    "static/css/main.cac5e7a2.css",
+    "static/css/main.e51ae00e.css",
     "static/js/main.ce02852e.js"
   ]
 }
